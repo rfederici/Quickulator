@@ -1,18 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:weightSum="4.5"
     tools:context="quickulator.skettidev.com.quickulator.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/history"
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center|start"
+        android:lines="1"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textAlignment="textStart"
+        android:textSize="15sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/display"
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|end"
+        android:lines="1"
+        android:text="0"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        android:textSize="50sp"/>
+
+
+    <TableRow
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/button_7"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="9" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="6" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="3" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/button_dec"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="." />
+
+            <Button
+                android:id="@+id/button_0"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button_eq"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="42sp"
+                android:text="=" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>
